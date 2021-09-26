@@ -1,0 +1,45 @@
+3.12~3.16
+3.12
+id #
+class .
+position 속성
+레이아웃보다 위치를 조금 옮기고 싶을 때 사용
+position: fixed;		제이에스티나 홈페이지 왕관모양 절대 움직이지 않는 팝업창 비스무리한 거
+			아무리 스코롤을 내려도 위치가 바뀌지 않음 모든 레이어의 최상위에 있음
+position: 속성 위치 -> top, left, right, bottom을 이용해서 위치를 지정해줄 수 있음
+3.13
+position 속성
+position: static;		레이아웃이 박스를 처음 위치하는 곳에 두는 것  default
+position: relative;		조금씩 위치를 옮길 때 사용
+top: -10px;		
+left: -10px;		처음 설정한 위치에서 위로 -10px 왼쪽으로 -10px 위치
+
+position: absolute;		relative랑 같이 써야함 부모가 relative
+			absolute는 가장 가까운 relative 부모를 기준으로 이동함
+3.14
+pesudo selectors		클래스를 선택할 때 id나 class 말고 다른 방법
+div: last-child{
+	background-color: teal;
+}			div들의 마지막 child 색상 color
+div: first-child		id나 class를 만드는 것보다 훨씬 좋음
+span: nth-child(2)		2번째 요소만 고름
+span: nth-child(2),span: nth-child(4)	2번째 4번째 요소		//짝수 even 홀수 odd
+span: nth-child(3n)		3n번째 요소 3의 배수에 해당하는 요소
+3.15
+pesudo selectors
+p span { }		p 안에 있는 span만 해당
+			div 바로 밑 자식(direct children)에서 span을 찾아 text-decoration을 해주는 방법이 있음
+부모 형제
+div > span { } 		무조건 div 바로 밑에 있는 span만 해당함	바로 밑 자식을 찾음
+부모와 바로 밑 자식의 관계
+p + span { }		p 무조건 바로 다음으로 오는 형제인 span만 적용됨  	형제를 찾음
+바로 밑 형제
+3.16
+p ~ span { }		p의 형제인데 바로 뒤에 오지 않는 span에 적용됨 
+형제 관계
+
+input: required { }		input 중에서 required된 것만 해당
+input: optional { }		required의 반대(잘 안씀)
+input[type="password"] { } 
+input[placeholder="username"] { }
+input[placeholder~="name"]	{ } 	input 중에서 placeholder에 name이라는 글자가 들어가는 것만 선택

@@ -1,0 +1,33 @@
+What does <!DOCTYPE html> do?					
+What are the two parts of an HTML document?				
+What do we put on the <head>?					
+What do we put on the <body>?					
+What do <meta> tags do?						
+There are very few HTML tags so we can memorize them all.		
+An HTML tag can have another HTML tag inside of it.				
+What is an ID							
+What is an ID							
+Can I add an ID to the <body> tag?					
+How many IDs can a tag have?					
+What is the name of tags that give no meaning to the document?			
+Which one is a semantic tag?					
+What is a semantic tag?						
+
+<!DOCTYEP html> 모든 HTML문서의 첫번째 라인 필수 
+이 코드는 브라우저에게 이건 text 파일이 아니라 html 문서라고 알려주는 것
+<html>
+	flfflf			// html 태그 사이에 넣는게 html 코드가 되는 것 
+</html>
+웹사이트 구조는 두 개의 파트로 구성되어 있음
+ - head / body
+head 파트에서는 웹사이트의 환경을 설정해 외부적으로 보여지지 않는 설정을 해줌
+meta - 부가적인 정보라는 뜻 extra data 
+The meta element represents various kinds of metadata that cannot be expressed using the title, base, link, style and
+script elements.
+-> title, base, link, style, script 요소를 사용하여 표현할 수 없는 다양한 종류의 메타 더이터를 나타낸다
+meta 태그는 두 개의 attribute를 갖고 있음 -> content와 name 
+<meta charset="utf-8">  : 브라우저에게 text를 어떻게 그려달라는지 말해줌 이거 안해주면 한글/특수문자 깨짐 주의 ->  self-closing 태그
+<html lang="en">	lang라는 attribute - 구글, 네이버와 같은 검색엔진들에 도움을 주기 위해서 / 우리 사이트에서 사용되는 언어가 무엇인지 말해주는 것
+주된 언어가 한국어인지 영어인지 검색엔진에게 알려주는 것 - 한국어가 주된 언어이면 <html lang="kr">
+
+

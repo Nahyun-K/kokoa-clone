@@ -1,0 +1,115 @@
+4.0~4.4
+4.0
+text-decoration : 글씨 밑줄 없애거나 만들거나
+Transition : 어떤 상태에서 다른 상태로 가는 변화를 애니메이션화 하는 것
+애니메이션 : 천천히 가는 것 어떤 효과
+-> transition이라는 속성은 state가 없는 요소에 붙어야 해
+a {	// 1. 어떤 것을 변화하게 만들 것인지 쓰기 2. 시간 얼마나 오래 변화하게 할지
+	transition: background-color 10s ease-in-out, color 5s ease-in-out;
+1.background-color를 변화하게 하고 싶음 10초에 걸려서 색을 바꿔주겠음}	// 이걸 하기위해서는 hover를 사용해야 함
+원한다면 transition을 더 추가할 수 있음 
+transition: all;
+a{				//element
+	color: wheat;
+	backgroud-color: tomato;
+	text-decoration: none;
+	padding: 3px 5px;
+	border-radius: 5px;
+	font-size: 55px;
+	transition: all 5s ease-in-out;			//ease-in-out:ease-in funtion이라 부름
+}	// transition all이라는 것의 의미는 color부터 font-size까지 다 hover속성으로 바꿔준다는 의미이다
+a:hover{				//state
+	color: tomato;
+	background-color: wheat;
+}
+transition으로 바꾸고 싶다면 a에도 속성이 있어야 하고 a:hover에도 속성이 있어야 애니메이션이 바뀜
+그리고 항상 transition의 위치는 a { }(element)에 있어야 함(a:hover { }(state) 안됨)
+4.1
+ease-in function : 기본적으로 브라우저에게 애니메이션이 어떻게 변할지를 알려주는 것임
+- linear / ease in / ease-out / ease-in-out / ease
+https://matthewlein.com/tools/ceaser		// function알려주는 사이트
+hover대신 active / focus 일때도 작동 focus-withn 주가
+
+4.2
+transformation - 말 그대로 한 요소를 transform(변형)시킬 수 있음
+img {
+	border : 1px solid black;
+	border-radius: 50%	;		//원 형태가 됨
+	transform: rotateY(35deg)		//css 3d로 돌려버림;;	
+	transform: scaleY(2, 2);
+	transform: translateX(-10px);		//다른 형제를 바꾸지는 않음
+}
+img:hover { 
+}
+<img src="img/logo.jpg" />
+transformation은 box element를 변형시키지 않아 만약 <span>이 있다면 그거랑 겹치는 한이 있어도 다른 변화를 주지 않아
+transformation은 margin, padding이 적용되지 않아 왜냐 일종의 3D transformation이기 때문임 픽셀을 움직임
+transformation은 페이지의 픽셀의 다른 부분에서 일어나기 때문 box 차원에서 일어나지 않아
+transformation 	matrix
+4.3
+hover는 마우스를 그 위에 두어야 애니메이션을 갖는다
+마우스를 두지 않고 + transition 없이 애니메이션을 갖는 방법은?
+coin flip이라는 애니메이션을 만들어보자
+애니메이션을 만들기 위한 규칙
+-> @를 적으면 됨	@keyframes 애니메이션 이름
+-> @keyframes coinFlip {
+	from {
+		transform: rotateX(0);
+	}
+	to {
+		transform: rotateX(100deg) translateX(100px);		//각도
+	}
+}
+img {
+	animation: coinFlip 5s ease-in-out infinite;		//마우스 없이 애니메이션이 일어남 무한대
+}
+
+keyframes에는 두 가지 옵션이 있다 
+4.4
+body {					// 중앙 정렬
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+@keyframes coinFlip {
+	0% {
+		transform: rotateX(0);
+	}
+	50% {
+		transform: rotateX(100deg) translateX(100px);		//각도
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
+img {
+	animation: coinFlip 5s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

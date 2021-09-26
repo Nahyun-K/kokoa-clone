@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 70px;
+        border: 5px solid white;
+        background-color: turquoise;
+        border-radius: 10px;
+        width: 700px;
+        height: 1500px;
+      }
+
+      .header__title {
+        font-size: 40px;
+        margin-left: 100px;
+      }
+      .symbol--fst {
+        width: 80px;
+        height: 60px;
+      }
+      .symbol--fst__p {
+        font-size: 20px;
+        margin: 0;
+      }
+      .title__img {
+        width: 300px;
+        height: 300px;
+      }
+      .symbol--fst,
+      .symbol--sec,
+      .symbol--trd {
+        background-color: white;
+        border: 2px solid pink;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        display: inline;
+      }
+      .symbol--fst:hover,
+      .symbol--sec:hover,
+      .symbol--trd:hover {
+        background-color: pink;
+      }
+      .symbol--fst__p {
+        display: inline;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border: violet;
+        margin: 10px;
+      }
+      img:hover {
+        opacity: 0.8;
+      }
+      h1,
+      h2 {
+        display: inline;
+      }
+      h4 {
+        display: inline;
+      }
+      .title,
+      .first,
+      .second,
+      .third,
+      .fourth {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+      .title__sub,
+      .album--first,
+      .album--second,
+      .album--third,
+      .album--fourth {
+        display: flex;
+        flex-direction: column;
+      }
+      .title__sub:hover,
+      .album--first:hover,
+      .album--second:hover,
+      .album--third:hover,
+      .album--fourth:hover {
+        background-color: pink;
+        opacity: 0.7;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <i class="far fa-times-circle" sytle="font-size:100px"></i>
+      <span class="header__title">Playlist</span><br /><br /><br /><br />
+    </header>
+    <div class="title">
+      <img class="title__img" src="Atlantis.jpg" />
+      <div class="title__sub">
+        <h1>Atlantis</h1>
+        <h4>by SHINee(7th)</h4>
+      </div>
+    </div>
+    <br /><br />
+    <div class="symbol">
+      <div class="symbol--fst">
+        <i class="fas fa-play"></i>
+        <p class="symbol--fst__p">Play</p>
+      </div>
+      <div class="symbol--sec">
+        <i class="fas fa-heart"></i>
+        <!--  <i class="far fa-heart"></i>   없음     -->
+      </div>
+      <div class="symbol--trd">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+
+    <div></div>
+    <br /><br /><br />
+    <form>
+      <div class="first">
+        <img src="everybody.jpg" />
+        <div class="album--first">
+          <h2>Everybody</h2>
+          <h4>by SHINee(5th mini album)</h4>
+        </div>
+      </div>
+      <div class="second">
+        <img src="DreamGirl.jpg" />
+        <div class="album--second">
+          <h2>Dream Girl</h2>
+          <h4>by SHINee(3th album-1)</h4>
+        </div>
+      </div>
+      <div class="third">
+        <img src="whySoSerious.jpg" />
+        <div class="album--third">
+          <h2>Why So Serious</h2>
+          <h4>by SHINee(3th album-2)</h4>
+        </div>
+      </div>
+      <div class="fourth">
+        <img src="1of1.jpg" />
+        <div class="album--fourth">
+          <h2>1 of 1</h2>
+          <h4>by SHINee (5th album)</h4>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

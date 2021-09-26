@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 700px)"
+      href="style.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KoKoa Talk</title>
+  </head>
+  <body>
+    <div id="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+        <!-- status-bar_column의 첫번째 child span-->
+        <!-- To Do : Wifi Icon -->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <!-- To Do : Battery Icon -->
+        <!-- To Do : Lighting Icon -->
+      </div>
+    </div>
+    <!-- Chat 누구랑 채팅하는지 Best Friend -->
+    <div class="chat-person">
+      <div class="chat-person__front">
+        <a href="chat2.html"><i class="fas fa-arrow-left"></i></a>
+        <span>Best Friend</span>
+      </div>
+      <div class="chat-person__end">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <!-- chatting 구간 -->
+    <div class="chatting">
+      <!-- 날짜 -->
+      <div class="chatting-date">
+        <div class="chatting-date__day">FRIDAY,JANUARY 11,2019</div>
+      </div>
+      <!-- 채팅 구간  상대편 -->
+      <div class="chatting-partner">
+        <img src="songkang_profile.jpg" class="chatting-partner__photo" />
+        <div class="chatting-partner__dialogue">
+          <div class="chatting-partner__dialogue-text">
+            Congrats I love you!
+          </div>
+          <div class="chatting-partner__dialogue-with">Best Friend</div>
+        </div>
+      </div>
+      <!-- 내가 채팅 -->
+      <div class="chatting-me">
+        <div class="chatting-me__text">Thank you see you soon!</div>
+      </div>
+      <!-- 상대편 -->
+      <div class="chatting-partner">
+        <img src="songkang_profile.jpg" class="chatting-partner__photo" />
+        <div class="chatting-partner__dialogue">
+          <div class="chatting-partner__dialogue-text">
+            Congrats I love you!
+          </div>
+          <div class="chatting-partner__dialogue-with">Best Friend</div>
+        </div>
+      </div>
+      <!-- 내가 채팅 -->
+      <div class="chatting-me">
+        <div class="chatting-me__text">Thank you see you soon!</div>
+      </div>
+    </div>
+    <!-- fixed된 Send message -->
+    <div class="chat-send">
+      <i class="far fa-plus-square"></i>
+      <div class="chat-send__message">
+        <span>Send message</span>
+      </div>
+      <div class="chat-send__icon">
+        <i class="far fa-smile"></i>
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <p id="special">"이곳이 바뀝니다"</p>
+    <button id="btn-change-text">Click me!</button>
+  </body>
+  <script>
+    const btn2 = document.getElementById("btn-change-text");
+    const txt = document.getElementById("special");
+    btn2.addEventListener("click", function () {
+      txt.innerHTML = "Hello World";
+    });
+  </script>
+</html>

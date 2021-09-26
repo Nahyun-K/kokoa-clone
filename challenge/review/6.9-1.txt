@@ -1,0 +1,33 @@
+6.9
+form은 아주 중요한 2가지 속성(attribute)을 가지고 있음
+1. action
+2. method
+
+> action
+action은 어떤 페이지로 data를 보낼건지 지정할 수 있다
+나는 data를 내가 새로 만들 파일로 보낼거야
+<form action="friends.html" method="" id="login-form">
+</form>
+
+> method
+method는 2가지 방식 중 하나를 쓸 수 있다
+1. POST
+2. GET
+
+>>POST
+POST 방식은 지금 이 프로젝트에서는 사용 불가능
+POST는 백엔드 서버에 정보를 전송하는 방식임(현재는 우리가 서버를 갖고 있지 않음)
+>>GET
+그래서 우리는 GET을 사용하는데 GET 방식은 보안에 취약함
+username이랑 password를 GET 방식으로 보내면 안됨
+URL에 포함되어도 상관없는 정보들을 GET 방식으로 보내는 것
+GET 방식이나 POST 방식에 대해 좀 더 알아보고 싶다면, [풀스택] 유튜브 클론 코딩을 듣기 form을 엄청 많이 씀
+
+
+
+
+
+
+
+
+

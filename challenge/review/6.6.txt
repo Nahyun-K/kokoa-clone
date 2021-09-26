@@ -1,0 +1,45 @@
+6.5
+link:css + ENTER
+-> <link rel="stylesheet" href="css/style.css">
+
+한 줄에 같이 놓고 싶으면 -> display: flex;
+flex의 축을 따라 얘네를 떨어뜨리려면 -> justify-content : space-between
+
+justify-content 대신 컨테이너 하나를 말그대로 중심에 놓는 css hack(기술)을 보여줄게
+justify-content의 space-between도 좋지만 다른 width를 가지고 있기 때문에 space-between이 조금 안 맞아
+
+justify-content: center;		// 모든 요소가 중간으로 몰림
+다음에는 모든 column에 33%의 width를 가지게 함
+
+아이콘 사이즈 커지게
+
+6.6
+가운데 정렬을 시키기 위한 방법1
+text일 경우
+text-align: center;
+가운데 정렬을 시키기 위한 방법 2
+>div의 범위를 먼저 정해주기
+div의 범위는 px로 정해줘도 괜찮지만 %로 정해주기!!!! div의 범위를 정해주면 text-align을 쓸수가 없게 됨
+화면의 몇%를 차지하냐를 지정해주는 것
+>text-align으로 가운데 정렬을 실패한 경우에는 display: flex;를 써야 함
+display: flex;
+만약 위아래로 놓이기를 바란다면
+flex-direction: column;
+이제 교차축을 이용해 셑너에 위치하게 만들기
+align-items: center;
+
+<----  끝  ---->
+opacity - 투명도
+
+input과 focus는 같이 쓸수 있당
+#id input:focus{
+}
+focus란 내가 input을 눌렀을 때 변함
+hover란 내가 input위에 마우스를 갖다 댔을 때 변함
+
+input{
+transition: border-color .3s ease-in-out;	//애니메이션 효과 }
+
+
+
+

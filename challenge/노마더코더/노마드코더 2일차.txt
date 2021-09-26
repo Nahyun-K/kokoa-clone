@@ -1,0 +1,24 @@
+We need to use VSCode if we want to make a website.			False
+If I make a mistake on HTML the browser will show an error.		False(브라우저는 HTML파일에 에러가 있다고 말해주지 않아)
+A browser will always show some content even if the HTML is wrong.	True(브라우저는 언제나 사용자에게 컨텐츠를 보여줄거야)
+I can write any tag I like on HTML, like <food>김치</food>		Yes
+To make a heading on HTML I should write <h1>Title<h1>		True
+list에는 두가지가 있음 첫번째는 ordered list(the list have ordered : 순서가 있는 목록)/unordered list(순서가 없는 목록)
+What does 'ol' stand for?						ordered list
+What does 'ul' stand for?						unordered list
+What does 'li' stand for?						list item
+Why do we use attributes on our HTML tags?				To giv tags more information
+What is the correct way of writing attributes?				<tag attribute="value">
+Can I write any attribute that I want?					Yes, but it will not have an effect on the browser
+All attributes work for all tags.					False
+If I give 'href' to a 'h1' it will become a title with a link.			False
+'img' tag is a self closing tag.					True
+What is a self closing tag?						A tag that has no content, all information is provided via attributes.
+
+
+tag에 추가하는 부가적인 정보를 attributes(속성)라고 한다
+attributes 중 하나 : href(hyperlink reference / HTTP reference) 이동할 곳을 알려줌 
+<a href="링크 주소 넣기" target="_blank">		//_blank는 새탭으로 열기
+이미지 <img></img> X  왜냐 img 태그는 "self_closing tag"이기 때문 자체 닫기 태그
+
+

@@ -1,0 +1,14 @@
+.setting {
+  padding: 1px 0px;
+}
+.setting-menu {
+  display: flex;
+  margin: 35px 20px;
+  font-size: 20px;
+}
+.setting-menu__title {
+  font-size: 24px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 200;
+}

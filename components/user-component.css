@@ -1,0 +1,33 @@
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 6px 8px;
+  position: relative;
+}
+.user-component:hover {
+  background-color: #ebe6c8;
+}
+.user-component__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.component__avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.user-component__icons {
+  position: absolute;
+  transform: translate(2000%, 0);
+}

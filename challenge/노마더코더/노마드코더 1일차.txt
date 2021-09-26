@@ -1,0 +1,14 @@
+A website is just a text file							True
+We write the code, the browser reads the code. the browser paints the website	True
+How many languages can a website be made of?				Min 1 Max 3
+What are the langauges we can use to make a website? 				HTML CSS JS
+What do we use HTML for?							To describe the content of our website to the browser
+What do we use CSS for?							To tell the brower how the content of our website looks like
+Can we make a website only with CSS?					We can't
+Can we make a website only with HTML?					We can!
+What do we use JS for?							To make our website interactive
+Without JS we can't make a website						False
+HTML & CSS are programming languages					False(JS is the only Programming Language)
+What kind of language is HTML?						Markup Language(content)
+What kind of language is CSS?						Design Languages
+What kind of language is JS?							Programming Language

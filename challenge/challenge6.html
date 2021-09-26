@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 100vh;
+        margin: 20px;
+        background-color: tomato;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      div {
+        background-color: teal;
+        width: 50px;
+        height: 50px;
+      }
+      #box {
+        background-color: wheat;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+      }
+      .smallest {
+        border: 2px solid white;
+      }
+      .mid {
+        border: 2px dashed white;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="smallest"></div>
+      <div class="mid"></div>
+      <div class="smallest"></div>
+    </div>
+  </body>
+</html>

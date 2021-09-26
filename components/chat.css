@@ -1,0 +1,97 @@
+.chat-person {
+  background-color: #e3dbeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 20px;
+  align-items: center;
+  font-size: 24px;
+}
+.chat-person__front {
+  width: 40%;
+}
+.chat-person__front > span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.chat-person__end {
+  display: flex;
+  justify-content: space-between;
+}
+.chat-person__end > i {
+  margin-left: 20px;
+}
+.chatting-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatting-date__day {
+  background-color: teal;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.chatting-partner {
+  display: flex;
+}
+.chatting-partner__photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0px 15px;
+  animation: coinFlip 5s ease-in-out infinite;
+}
+.chatting-partner__dialogue-text {
+  background-color: violet;
+  padding: 10px;
+  border-radius: 15px 15px 15px 0px;
+  font-weight: 600;
+  color: white;
+}
+.chatting-partner__dialogue-with {
+  padding: 8px 0px;
+  font-size: 12px;
+  font-weight: 550;
+}
+.chatting-me {
+  display: flex;
+  margin: 20px;
+  align-items: right;
+  justify-content: flex-end;
+}
+.chatting-me__text {
+  width: auto;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  border-radius: 15px 15px 0px 15px;
+  padding: 10px;
+}
+.chat-send {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #e3dbeb;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+.chat-send__message {
+  width: 80%;
+}
+.chat-send__icon {
+  padding-right: 25px;
+}
+@keyframes coinFlip {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}

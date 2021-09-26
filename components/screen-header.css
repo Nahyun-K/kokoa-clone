@@ -1,0 +1,15 @@
+/*스크린 헤더 css는 모두 여기에~~~*/
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*icon을 중앙정렬하기 가로 가운데 정렬 X 세로 가운데 정렬 O*/
+  padding: 25px;
+}
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600; /*글씨 통통해~*/
+}
+/*icon들 끼리 조금씩 떨어져 있음*/
+.screen-header__icons span {
+  margin-left: 20px;
+}

@@ -1,0 +1,28 @@
+.status-bar {
+  display: flex; /*  한줄에 같이 넣고 싶을 때 이용 */
+  /*justify-content: space-between; */ /* 요소끼리 떨어뜨려 놓기 */
+  justify-content: center; /* 모든 요소가 중간으로 몰림*/
+  padding: 5px 3px;
+}
+/* 중간으로 몰린 요소를 띄어쓰기 처렇 하기 위해서
+  모든 column엔 33%의 width를 가지게 함*/
+.status-bar__column {
+  width: 33%;
+}
+/*이제 두번째 column의 자식을 중앙에 두게 만들기*/
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/*마지막 column 조정하기*/
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /*이거는 상황에 따라 안해줄수도 있겠음 여기는 요소가 3개라서 해줌*/
+}
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}

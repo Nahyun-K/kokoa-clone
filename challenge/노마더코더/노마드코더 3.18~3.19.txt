@@ -1,0 +1,31 @@
+3.18~3.19
+3.18
+pesudo elements
+<input placeholder/>
+input::placeholder { }	 placeholder의 style을 바꿔줌
+
+<p>여기에 글을 쓰고 selection을 하면 글을 드래그 했을 때 변화가 있음</p>
+p::selection { }		웹사이트의 개성
+
+<p></p>			첫번째 문자만 바꿀 수 있음
+p::first-letter { }
+
+:hover : 마우스 커서가 위에 올라가 있을 때를 말함
+:active : 마우스가 어떤걸 클릭하고 있을 때를 말함
+:focus : 어떤 엘리먼트각 focus되어 있을 때를 말함
+:visited : 우리가 클릭/방문한 적이 있는가를 알려줌
+:focus-within : focus 상태인 자식을 가진 부모 엘림먼트에 적용됨
+
+3.19
+색관련
+:root는 기본적으로 모든 document의 뿌리가 될거야
+:root { 
+	--main-color: #fcce00;	// variable(변수) 또는 custom property
+}
+그래서 만약 다른 background-color나 color에서 메인 컬러를 쓰려면
+background-color: var(--main-color);		또는 color: var(--main-color);	라고 쓰면 된다
+
+컬러를 변수에 넣어준 것 
+
+변수는 dash 2개 다음에 dash 1개 그리고 변수이름 이렇게 지어야 함
+

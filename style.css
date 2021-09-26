@@ -1,0 +1,98 @@
+@import "screens/reset.css";
+@import "components/status-bar.css";
+@import "screens/variables.css";
+
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/friends.css";
+
+@import "components/user-component.css";
+
+@import "components/find-menu.css";
+
+@import "components/more-menu.css";
+
+@import "components/chat.css";
+
+@import "components/settings.css";
+body {
+  color: #2e363e;
+
+  /* 글꼴 지정*/
+  height: 1000vh; /*높이를 지정해주는것 만약 아무것도 없는데 드래그해서 확인하고 싶을 때 사용하면 좋음*/
+}
+
+#status-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome-header {
+  margin: 90px 0px;
+  /* header p 가운데 정렬을 위해서 씀!*/
+  display: flex;
+  /* 이것들이 좌우로 놓이는게 아니라 위아래로 놓이기를 원한다면*/
+  flex-direction: column;
+  /* 교차축을 이용해 선터에 위치하게 만들기 */
+  align-items: center;
+}
+/* header에 있는 값은 모두 가운데에 있음 
+그래서 display: flex;를 써수 있집만 h1과 p 같은 텍스트를 다루는 것이기 때문에
+text-align: center; 사용*/
+
+/* h1과 p 사이의 간격이 약 40px*/
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+/* 텍스트 범위가 정해져 있당~ */
+.welcome-header__text {
+  width: 60%; /* width를 정해주면 가운데 정렬이 안됨 그래서 위에서 다시 display: flex를 써줌*/
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+/*login form이라는 id를 가진 form 안에 있는 input들에만 적용*/
+#login-form input {
+  border: none;
+  /*input의 모든 요소를 말함*/
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+/* 처음에는 아이디를 적어주고 그 id를 가진 form 안에 있는 input을 적어줌*/
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: yellow;
+  /*border-color: var(--yellow);*/
+  /*위에 border-color: yellow는 모든 input 타입에 적용된다 즉 submit에도 적용되는데 submit에 적용되게 하고 싶지 않다면 */
+  /* :not을 사용안하 뭔가가 적용되는 걸 원하지 않을 때 사용 */
+}
+
+#login-form input[type="submit"] {
+  background-color: yellow;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}

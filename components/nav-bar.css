@@ -1,0 +1,53 @@
+.nav {
+  position: fixed; /*아래에 고정시키기*/
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /*이걸 안해주면 padding값 때문에 마지막 아이콘이 안보이는 불상사가 발생*/
+  /*윗줄의 마법의 한줄로 모든 아이콘들이 한줄에 다 보이게 되었다*/
+  /*처음에 width를 100%로 줘서 화면 가로로 꽉차게 nav를 만들어줬는데 거기서 padding 값을 주면 padding 값만큼 크기가 추가가 됨 그러므로 nav의 크기가 더 커져서
+  맨 마지막 아이콘이 보이지 않게 됨 만약 내가 widht:200px를 주고 padding: 50px를 주면 결과적으로 크기는 250px이 되어버림 
+  box-sizing: border-box;의 으미는 CSS에게 내가 padding을 줘도 신경쓰지만 내 box 사이즈를 늘리지 말아줘 라고 한 것임.
+  그러면 안에 box-sizing: border-box를 하면 결과적으로 box사이즈는 150px이 됨
+  */
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  animation: coinFlips 1s ease-in;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /*위치를 겹치게 만들기*/
+  left: 15px;
+  bottom: 15px;
+}
+@keyframes coinFlips {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+  body {
+    background-color: #eeeeee;
+  }
+}

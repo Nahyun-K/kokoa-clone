@@ -1,0 +1,21 @@
+.find-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.find-menu__bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+}
+.find-menu__bar > span {
+  margin-top: 20px;
+  font-size: small;
+}
+.find-smalltitle > h5 {
+  margin: 20px;
+  font-size: 12px;
+  font-weight: 100;
+}

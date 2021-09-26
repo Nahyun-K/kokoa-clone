@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: whitesmoke;
+        position: relative;
+        font-family: times;
+      }
+      h1 {
+        text-align: center;
+      }
+      .container {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 600px;
+        height: 800px;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item {
+        width: 20px;
+        height: 300px;
+        flex: 1 1 20%;
+        margin: 40px;
+        border: 5px solid white;
+      }
+      .box {
+        margin-top: 20px;
+        background-color: white;
+        font-size: larger;
+      }
+      #tomato {
+        background-color: tomato;
+      }
+      #teal {
+        background-color: teal;
+      }
+      div:nth-child(3) {
+        background-color: burlywood;
+      }
+      div:nth-child(4) {
+        background-color: thistle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Best Colors</h1>
+    <div class="container">
+      <div class="item" id="tomato">
+        <div class="box">
+          <br />
+          <span>Tomato</span><br /><br />
+          <span>#FF6347<br /></span><br />
+        </div>
+      </div>
+      <div class="item" id="teal">
+        <div class="box">
+          <br />
+          <span>Teal</span><br /><br />
+          <span>#008080<br /></span><br />
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <br />
+          <span>Burlywood</span><br /><br />
+          <span>#DEB887<br /></span><br />
+        </div>
+      </div>
+      <div class="item">
+        <div class="box">
+          <br />
+          <span>Thistle</span><br /><br />
+          <span>#D7BFD7<br /></span><br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
